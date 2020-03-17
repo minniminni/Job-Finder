@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Vantaa</title>
+    <!-- Font family -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&amp;subset=latin-ext"
+          rel="stylesheet">
+    <!-- Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link href="JoJoCSS3.css" rel="stylesheet">
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<!-- The social media icon bar -->
+<div class="icon-bar">
+    <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.google.fi/" target="_blank" class="google"><i class="fa fa-google"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
+<!-- Side navigation -->
+<div class="sidenav">
+    <button class="dropdown-btn">Sivusta
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <br>Tervetuloa! </br> Kartalla on  värikoodein ammattialoittain avoimena olevat työpaikat Vantaalla.</br></br>
+        Klikkaamalla palloa saat näkyviin työtehtävänimikkeen ja linkin sivulle. </br></br> Lisäksi klikattuasi palloa
+        voit <b>HSL</b> tekstiä painalla nähdä reittiohjeet nykyisestä sijainnistasi työpaikalle. </br> Onnea matkaan!</p>
+    </div>
+    <button class="dropdown-btn">Meistä
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <br>TEKIJÄT: </br> Minni Ojala, Olli Kaivola & Juhani Lehtonen </br></br>
+        PÄÄVASTUUALUEET: </br> - Minni & Olli: Kartta, markkerien lisäys ja APIn toiminta </br> - Juhani: Ulkoasu, sivupalkkien toiminta ja ryhmän kotisivu. </p>
+    </div>
+    <a href="JoJoInfo3.html">Kotisivu</a>
+    <div class="item active">
+        <img src="" style="width:100%; height:auto;float:left;"><img src="JoJo-team.jpg"/>
+        <div>
+            <video height=140px controls="controls">
+                <source src="JoJo-video.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <div class="scroll">
+            <button class="dropdown-btn" style = color:white;>Notepad
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container" style = background-color:black>
+                <textarea rows="9" cols="20"> Kirjoita tähän omat muistiinpanot.
+            </textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page content -->
+<div class="container">
+    <header>
+        <h1>Jobs Vantaa</h1>
+    </header>
+    <div id="map"></div>
+    <main>
+        <article>
+            <h3 id="nimi"></h3>
+            <div id="hsl">
+                <div>
+                    <a href="#" target="_blank">HSL (Click!) </a>
+                </div>
+            </div>
+        </article>
+    </main>
+</div>
+
+<!-- Libraries fetch before JS-file ref -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
+<script src="JoJoJS3.js"></script>
+</body>
+</html>
